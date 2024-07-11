@@ -1,0 +1,13 @@
+1º
+Abra o terminal do vscode
+
+2º
+Viajar para o diretório que está a pasta
+digitar o diretório
+exemplo: cd "C:\Users\PICHAU\Documents\PROG\PE2_T1"
+
+3º
+gcc main.c lista_contatos.c -o programa
+
+4º
+./programa
