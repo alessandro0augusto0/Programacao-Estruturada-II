@@ -37,20 +37,20 @@ Deixar apenas a função main() com o menu de opções com switch/case no arquiv
 2. No arquivo de unidade (arquivo .c) vão as denições de funções (corpo da função);
 3. Então, para usar as funções, é necessário incluir o arquivo de cabeçalho (.h) com o uso de aspas duplas
 ( ).
-
+<br>
 ##############################################################################################################################################################################
-
+<br>
 Descrição (Gerenciamento de pessoas):
 
 Criar uma estrutura conforme detalhamento abaixo:
--Pessoa:
-Identificador único inteiro
-Nome completo
-Idade
-Endereço
-Número
-Cidade
-Sigla estado
+- Pessoa:<br>
+  Identificador único inteiro<br>
+  Nome completo<br>
+  Idade<br>
+  Endereço<br>
+  Número<br>
+  Cidade<br>
+  Sigla estado
 
 Desenvolver um programa que atenda os seguintes requisitos:
 - O programa deve possuir métodos e funções para cadastro, edição, exclusão de registros e listagem geral de todos os atributos;
