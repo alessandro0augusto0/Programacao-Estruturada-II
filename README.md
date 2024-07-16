@@ -1,4 +1,4 @@
-Trabalhos feitos no 2º período de Engenharia de computação no IFSULDEMINAS - Campus Poços de Caldas
+Trabalhos feitos no 2º período de Engenharia de computação para a disciplina "Programação Estruturada II" - IFSULDEMINAS - Campus Poços de Caldas
 
 Descrição (Contatos de uma agenda):
 
@@ -38,7 +38,7 @@ Deixar apenas a função main() com o menu de opções com switch/case no arquiv
 3. Então, para usar as funções, é necessário incluir o arquivo de cabeçalho (.h) com o uso de aspas duplas
 ( ).
 
-#######################################################################################################################################################################################################################
+##############################################################################################################################################################################
 
 Descrição (Gerenciamento de pessoas):
 
