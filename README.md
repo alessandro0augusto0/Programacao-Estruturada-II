@@ -40,7 +40,7 @@ Deixar apenas a função main() com o menu de opções com switch/case no arquiv
 <br>
 ##############################################################################################################################################################################
 <br>
-Descrição (Gerenciamento de pessoas):
+<br>Descrição (Gerenciamento de pessoas):
 
 Criar uma estrutura conforme detalhamento abaixo:
 - Pessoa:<br>
