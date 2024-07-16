@@ -43,19 +43,19 @@ Deixar apenas a função main() com o menu de opções com switch/case no arquiv
 Descrição (Gerenciamento de pessoas):
 
 Criar uma estrutura conforme detalhamento abaixo:
-● Pessoa:
-○ Identificador único inteiro
-○ Nome completo
-○ Idade
-○ Endereço
-○ Número
-○ Cidade
-○ Sigla estado
+-Pessoa:
+Identificador único inteiro
+Nome completo
+Idade
+Endereço
+Número
+Cidade
+Sigla estado
 
 Desenvolver um programa que atenda os seguintes requisitos:
-● O programa deve possuir métodos e funções para cadastro, edição, exclusão de registros e listagem geral de todos os atributos;
-● Deve-se utilizar um único arquivo para manipular os dados;
-● Em todos os métodos e funções devem ser utilizados ponteiros para manipular as entidades
+- O programa deve possuir métodos e funções para cadastro, edição, exclusão de registros e listagem geral de todos os atributos;
+- Deve-se utilizar um único arquivo para manipular os dados;
+- Em todos os métodos e funções devem ser utilizados ponteiros para manipular as entidades
 
 Exibir um menu para o usuário com as opções na seguinte ordem:
 1. Gerência de Pessoas
