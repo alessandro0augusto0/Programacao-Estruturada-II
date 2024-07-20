@@ -1,76 +1,103 @@
-Trabalhos feitos no 2º período de Engenharia de computação para a disciplina "Programação Estruturada II" - IFSULDEMINAS - Campus Poços de Caldas
+# Trabalhos de Programação Estruturada II
 
-Descrição (Contatos de uma agenda):
+Trabalhos feitos no 2º período de Engenharia de Computação para a disciplina "Programação Estruturada II" - IFSULDEMINAS - Campus Poços de Caldas
+
+## Descrição
+
+### Contatos de uma Agenda
 
 Desenvolva as estruturas para representar os contatos de uma agenda conforme a descrição a seguir:
-1. endereço com char rua[50], int numero, char bairro[50] e char cidade[50];
-2. telefone com char ddd[2] e char numero[9];
-3. contato com char nome[50], char email[30], endereco e um array para armazenar 2 telefones um para o fixo e outro para o celular telefone[2].
 
-Observação: Utilize a diretiva #dene para estabelecer os valores dos tamanhos de cada string.
+- **Endereço:**
+  - `char rua[50]`
+  - `int numero`
+  - `char bairro[50]`
+  - `char cidade[50]`
+- **Telefone:**
+  - `char ddd[2]`
+  - `char numero[9]`
+- **Contato:**
+  - `char nome[50]`
+  - `char email[30]`
+  - Endereço
+  - Um array para armazenar 2 telefones: telefone fixo e celular `telefone[2]`
 
-Crie uma agenda com capacidade de armazenar 10 contatos através de um ponteiro com o nome agenda para contato. Faça todo o gerenciamento de memória com alocação dinâmica calloc() ou malloc() e libere a memória com free() quando não for mais necessária, para otimizar o uso da memória.
+**Observação:** Utilize a diretiva `#define` para estabelecer os valores dos tamanhos de cada string.
 
-Crie uma lista simplesmente encadeada e utilize modularização por meio de funções para as seguintes operações. Todas as operações é necessário fazer o uso das funções scanf() ou do fgets().
+Crie uma agenda com capacidade de armazenar 10 contatos através de um ponteiro com o nome `agenda` para contato. Faça todo o gerenciamento de memória com alocação dinâmica `calloc()` ou `malloc()` e libere a memória com `free()` quando não for mais necessária, para otimizar o uso da memória.
 
-1. Adicionar um contato na primeira e na última posição;
-2. Adicionar um contato em qualquer posição;
-3. Remover um contato na primeira e na última posição;
-4. Remover um contato em qualquer posição;
-5. Editar um contato qualquer;
-6. Listar todos os contatos;
-7. Buscar um contato através do nome, se houver mais de um contato com o mesmo nome listar todos os contatos encontrados;
-8. Utilizar a função realloc() para realocar a memória caso o usuário queira aumentar ou diminuir o tamanho da agenda. Porém se o usuário for diminuir deverá ser impresso uma mensagem avisando que se ele diminuir o tamanho da agenda poderá perder algumas informações de contatos. Por exemplo, foi solicitado o tamanho 10 contatos, mas se o usuário desejar aumentar para 20 contatos ele poderá aumentar mesmo que a agenda não possua 10 contatos completos, mas supondo que a agenda já possua 8 contatos e ele deseje reduzir o tamanho da agenda para 5, ele perderá os últimos 3 contatos.
-9. Tome cuidado ao utilizar a função realloc() e faça o devido tratamento de erro caso a função retorne NULL. Esse erro é conhecido por Memory Leak.
-10. Por último, para exibir o menu de opções para o usuário utilize o comando switch/case.
+### Lista Simplesmente Encadeada
 
-Observação: Apenas para facilitar as correções pelo professor, armazene na memória da agenda os dados de 5 contatos xos, faça uso das funções strcpy() ou do strncpy(), essas duas funções possibilitam armazenar copiar um valor para os respectivos campos de um contato sem precisar utilizar a função scanf() para isso. O
-objetivo de armazenar esses valores xo seria apenas para o professor poder realizar os testes já na primeira execução e não precisar car preenchendo sempre os dados de um contato através do scanf() na correção dos trabalhos. Quem não zer essa parte vai perder nota!
+Crie uma lista simplesmente encadeada e utilize modularização por meio de funções para as seguintes operações. Todas as operações devem usar as funções `scanf()` ou `fgets()`.
 
-Criação de bibliotecas
+- Adicionar um contato na primeira e na última posição;
+- Adicionar um contato em qualquer posição;
+- Remover um contato na primeira e na última posição;
+- Remover um contato em qualquer posição;
+- Editar um contato qualquer;
+- Listar todos os contatos;
+- Buscar um contato através do nome. Se houver mais de um contato com o mesmo nome, listar todos os contatos encontrados;
+- Utilizar a função `realloc()` para realocar a memória caso o usuário queira aumentar ou diminuir o tamanho da agenda. Se o usuário diminuir o tamanho da agenda, uma mensagem deve avisar que ele pode perder algumas informações de contatos. Por exemplo, se a agenda possui 8 contatos e o usuário deseja reduzir para 5, ele perderá os últimos 3 contatos.
 
-Fazer uso de 2 bibliotecas uma para armazenar as estruturas e outra para armazenar as funções das listas.
+Tome cuidado ao utilizar a função `realloc()` e faça o devido tratamento de erro caso a função retorne `NULL`. Esse erro é conhecido por "Memory Leak".
 
-Deixar apenas a função main() com o menu de opções com switch/case no arquivo principal. Faça o #include das bibliotecas no arquivo principal.
+### Menu de Opções
 
-1. No arquivo de cabeçalho (header le .h) vão as declarações de funções (assinaturas) e denições de estruturas;
-2. No arquivo de unidade (arquivo .c) vão as denições de funções (corpo da função);
-3. Então, para usar as funções, é necessário incluir o arquivo de cabeçalho (.h) com o uso de aspas duplas
-( ).
-<br>
-##############################################################################################################################################################################
-<br>
-<br>Descrição (Gerenciamento de pessoas):
+Para exibir o menu de opções para o usuário, utilize o comando `switch/case`.
 
-Criar uma estrutura conforme detalhamento abaixo:
-- Pessoa:<br>
-  Identificador único inteiro<br>
-  Nome completo<br>
-  Idade<br>
-  Endereço<br>
-  Número<br>
-  Cidade<br>
-  Sigla estado
+**Observação:** Para facilitar as correções pelo professor, armazene na memória da agenda os dados de 5 contatos fixos. Faça uso das funções `strcpy()` ou `strncpy()`. O objetivo é permitir ao professor realizar testes já na primeira execução sem precisar preencher os dados de um contato através do `scanf()` na correção dos trabalhos. Quem não fizer essa parte vai perder nota!
+
+### Criação de Bibliotecas
+
+Fazer uso de 2 bibliotecas, uma para armazenar as estruturas e outra para armazenar as funções das listas.
+
+- Deixe apenas a função `main()` com o menu de opções com `switch/case` no arquivo principal. Faça o `#include` das bibliotecas no arquivo principal.
+- No arquivo de cabeçalho (header `.h`) vão as declarações de funções (assinaturas) e definições de estruturas.
+- No arquivo de unidade (arquivo `.c`) vão as definições de funções (corpo da função).
+
+Para usar as funções, é necessário incluir o arquivo de cabeçalho (`.h`) com o uso de aspas duplas (`""`).
+
+---
+
+# Gerenciamento de Pessoas
+
+### Estrutura Pessoa
+
+Crie uma estrutura conforme detalhamento abaixo:
+
+- **Pessoa:**
+  - Identificador único inteiro
+  - Nome completo
+  - Idade
+  - Endereço
+  - Número
+  - Cidade
+  - Sigla do estado
+
+### Requisitos do Programa
 
 Desenvolver um programa que atenda os seguintes requisitos:
+
 - O programa deve possuir métodos e funções para cadastro, edição, exclusão de registros e listagem geral de todos os atributos;
 - Deve-se utilizar um único arquivo para manipular os dados;
-- Em todos os métodos e funções devem ser utilizados ponteiros para manipular as entidades
+- Em todos os métodos e funções devem ser utilizados ponteiros para manipular as entidades.
+
+### Menu de Opções
 
 Exibir um menu para o usuário com as opções na seguinte ordem:
-1. Gerência de Pessoas
-2. Sair
-3. Ajuda (exibir uma descrição sobre o programa)
+
+- **Gerência de Pessoas**
+- **Sair**
+- **Ajuda** (exibir uma descrição sobre o programa)
 
 Dentro do menu de gerência de pessoas, exibir as opções na seguinte ordem:
-1. Inicializar (apagar tudo o que já foi inserido, mediante confirmação)
-2. Inserir
-3. Editar
-4. Remover
-5. Listar por Código
-6. Listar Tudo
-7. Voltar
 
-OBS: Em todas as opções do menu deve haver uma descrição detalhada para que o usuário saiba o que inserir,
-quais opções são válidas, e para que serve cada um dos campos solicitados. Deve ser feita a validação dos
-campos: números, valores permitidos, valores de enum, etc.
+- **Inicializar** (apagar tudo o que já foi inserido, mediante confirmação)
+- **Inserir**
+- **Editar**
+- **Remover**
+- **Listar por Código**
+- **Listar Tudo**
+- **Voltar**
+
+**OBS:** Em todas as opções do menu deve haver uma descrição detalhada para que o usuário saiba o que inserir, quais opções são válidas, e para que serve cada um dos campos solicitados. Deve ser feita a validação dos campos: números, valores permitidos, valores de enum, etc.
